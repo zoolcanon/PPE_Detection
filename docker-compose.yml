@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    # command: python testing.py
+    shm_size: '24g'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    volumes:
+      - .:/app

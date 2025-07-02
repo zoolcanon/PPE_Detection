@@ -1,0 +1,15 @@
+path: ./v5/CHVG-Dataset
+train: images/train
+val: images/test
+
+nc: 8
+
+names:
+  0: person
+  1: vest
+  2: glass
+  3: head
+  4: red
+  5: yellow
+  6: blue
+  7: white
